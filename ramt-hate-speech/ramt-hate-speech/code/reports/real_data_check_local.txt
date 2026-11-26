@@ -1,8 +1,0 @@
-load info: {'rationale_vectors_dropped_length_mismatch': 1, 'not_in_divisions': 919}
-train {"n": 15383, "labels": {"hatespeech": 4748, "offensive": 4384, "normal": 6251}, "eligible_share": 0.5935, "p_empty_batch_32": 3.0868564694812176e-13, "all_words_marked_posts": 997, "degenerate_random_control_posts": 76, "toxic_posts_without_rationales": 0, "n_annotator_vectors": {"0": 6251, "3": 3518, "2": 5613, "1": 1}, "words_mean": 23.47, "words_p95": 49.0, "words_p99": 52.0, "words_max": 165}
-val {"n": 1922, "labels": {"hatespeech": 593, "offensive": 548, "normal": 781}, "eligible_share": 0.5937, "p_empty_batch_32": 3.052986032777359e-13, "all_words_marked_posts": 131, "degenerate_random_control_posts": 13, "toxic_posts_without_rationales": 0, "n_annotator_vectors": {"3": 415, "2": 726, "0": 781}, "words_mean": 23.46, "words_p95": 49.0, "words_p99": 52.0, "words_max": 70}
-test {"n": 1924, "labels": {"hatespeech": 594, "offensive": 548, "normal": 782}, "eligible_share": 0.5936, "p_empty_batch_32": 3.0764788336091004e-13, "all_words_marked_posts": 126, "degenerate_random_control_posts": 7, "toxic_posts_without_rationales": 0, "n_annotator_vectors": {"0": 782, "3": 457, "2": 685}, "words_mean": 23.14, "words_p95": 49.0, "words_p99": 52.0, "words_max": 55}
-W from HateXplain train alone (final W pools all three tasks): 49
-HX normalised-text overlap: {'train_test': 6, 'train_val': 8, 'val_test': 2}
-test top-10 communities: [('African', 315), ('Islam', 194), ('Jewish', 188), ('Homosexual', 182), ('Women', 147), ('Refugee', 85), ('Arab', 67), ('Caucasian', 52), ('Asian', 36), ('Hispanic', 35)]
-HateCheck: {'n': 3728, 'hateful': 2563, 'functionalities': 29, 'overlap_with_hx_train': 1}

@@ -1,6 +1,0 @@
-# Kaggle images already ship torch, transformers, scikit-learn, pandas, numpy, scipy, PyYAML.
-# Do not upgrade them on Kaggle; every run records the exact versions in env.json (pip freeze).
-lime==0.2.0.1
-sentencepiece        # DeBERTa-v3 tokenizer
-protobuf
-pytest               # CPU test suite (tests/)
