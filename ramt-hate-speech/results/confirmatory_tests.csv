@@ -1,0 +1,13 @@
+test,A,B,mean_A,mean_B,diff_A_minus_B,ci_combined_lo,ci_combined_hi,p,p_holm,seeds_A_better,K,sign_consistent,claim
+H1_explicit,M2_MTL_noRat,M5_STL_explicit,0.656514,0.657862,-0.001348,-0.036926,0.03423,0.900331,1.0,1.0,3.0,False,False
+H1_implicit,M2_MTL_noRat,M5_STL_implicit,0.819557,0.818405,0.001152,-0.006684,0.008987,0.771188,1.0,1.0,3.0,False,False
+H1_hx,M2_MTL_noRat,M5_STL_hx,0.685867,0.684368,0.0015,-0.012999,0.015999,0.838061,1.0,2.0,3.0,False,False
+H2_hx_macro_f1_vsM2,M1_RAMT,M2_MTL_noRat,0.684367,0.68694,-0.002574,-0.014391,0.009244,0.639578,1.0,2.0,5.0,False,False
+H2_plausibility_vsM2,M1_RAMT,M2_MTL_noRat,0.924233,0.68808,0.236153,0.200665,0.271641,0.0,0.0,5.0,5.0,True,True
+H2_faithfulness_vsM2,M1_RAMT,M2_MTL_noRat,0.455348,0.282305,0.173044,0.148393,0.197694,0.0,2e-06,5.0,5.0,True,True
+H2_hx_macro_f1_vsM3,M1_RAMT,M3_random_matched,0.684367,0.684446,-7.9e-05,-0.010078,0.00992,0.987474,1.0,3.0,5.0,False,False
+H2_plausibility_vsM3,M1_RAMT,M3_random_matched,0.924233,0.397922,0.526311,0.489308,0.563315,0.0,0.0,5.0,5.0,True,True
+H2_faithfulness_vsM3,M1_RAMT,M3_random_matched,0.455348,0.011983,0.443365,0.420645,0.466085,0.0,0.0,5.0,5.0,True,True
+H3_explicit_head,M1_RAMT,M2 and M3,0.893877,0.550776,0.343101,,,0.0,0.0,,,True,True
+H3_implicit_head,M1_RAMT,M2 and M3,0.607655,0.541877,0.065778,,,0.123658,0.865605,,,False,False
+F_gmb_bpsn,M1_RAMT,M2_MTL_noRat,0.684835,0.722039,-0.037204,-0.198569,0.124161,0.651319,1.0,0.0,5.0,True,False

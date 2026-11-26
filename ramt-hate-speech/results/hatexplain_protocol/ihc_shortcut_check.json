@@ -1,0 +1,42 @@
+{
+ "test_auroc_surface_features_only": 0.5619343552855304,
+ "feature_means_test": {
+  "starts_with_RT": {
+   "implicit": 0.011267605633802818,
+   "not_hate": 0.019556224144415192
+  },
+  "double_quotes": {
+   "implicit": 0.4028169014084507,
+   "not_hate": 0.40466340729597594
+  },
+  "single_quotes": {
+   "implicit": 0.38380281690140844,
+   "not_hate": 0.3535163595336593
+  },
+  "user_mentions": {
+   "implicit": 0.0028169014084507044,
+   "not_hate": 0.0
+  },
+  "urls": {
+   "implicit": 0.0014084507042253522,
+   "not_hate": 0.0
+  },
+  "hashtags": {
+   "implicit": 0.2774647887323944,
+   "not_hate": 0.27792403159082363
+  },
+  "n_words": {
+   "implicit": 17.73169014084507,
+   "not_hate": 16.21587062805566
+  }
+ },
+ "coefficients": {
+  "starts_with_RT": -0.3479,
+  "double_quotes": -0.0287,
+  "single_quotes": -0.0115,
+  "user_mentions": 2.1169,
+  "urls": 1.5805,
+  "hashtags": -0.0299,
+  "n_words": 0.0228
+ }
+}

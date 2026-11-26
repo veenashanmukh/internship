@@ -1,0 +1,15 @@
+# Filled in ONCE after the pilot (gate G3), from validation scores only, then dated.
+# Every main run reads these values. Leave null until the pilot is complete:
+# scripts/run_jobs.py refuses to expand main groups while any value is null.
+frozen_on: null            # date, e.g. 2026-11-27
+encoder: roberta-base      # pilot_encoder 25 Nov 2026: val composite 0.7538 (DeBERTa 0.7533, HateBERT 0.7308)
+lr_by_encoder:             # best lr per encoder (scope A) or 2e-5 for all (scopes B, C)
+  GroNLP/hateBERT: 2.0e-05                # 0.7308 vs 0.7289 at 3e-5
+  roberta-base: 2.0e-05                   # 0.7538 vs 0.7502 at 3e-5
+  microsoft/deberta-v3-base: 3.0e-05      # 0.7533 vs 0.7530 at 2e-5
+fp32_encoders: []          # B0 (25 Nov 2026): none; all three stable in fp16
+mu: null                   # from {0.25, 0.5, 1.0} (pilot_mu group)
+aggregation: null          # soft or majority (pilot_agg group; tie within 0.005 -> soft)
+scope: A                   # B0 25 Nov 2026: 8.49 steps/s/GPU x2 (RoBERTa); 85% = 7.21 >= 2.19 needed
+five_seeds_m1_m3: true     # scope A + 5 seeds fits (D11)
+cls_baseline: true         # 18,000 steps on top of scope A + 5 seeds still fits the 24 h budget (D13)
